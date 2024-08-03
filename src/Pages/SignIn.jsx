@@ -8,6 +8,7 @@ import { useState } from 'react'
 const auth = getAuth(app)
 
 function SignIn() {
+    
     const [user, setUser] = useState("")
     const navigate = useNavigate()
     const submitUser = async (e) => {
