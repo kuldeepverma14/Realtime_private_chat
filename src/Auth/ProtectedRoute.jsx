@@ -1,19 +1,18 @@
+/* eslint-disable react/prop-types */
+import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
-const token = localStorage.getItem("chatToken")
 function ProtectedRoute({ children }) {
     const navigate = useNavigate()
-    console.log(token)
-    if (!token) {
-        navigate("/login")
-    }
+    const token = localStorage.getItem("chatToken")
 
+    useEffect(() => {
+        if (!token) {
+            navigate("/signin")
+        }
+    }, [navigate, token])
 
-    return (
-        <>
-            {children}
-        </>
-    )
+    return token ? children : null
 }
 
 export default ProtectedRoute
