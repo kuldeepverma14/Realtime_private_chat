@@ -1,4 +1,4 @@
-import Navbar from './Navbar'
+import Navbar1 from './Navbar1'
 import Search from './Search'
 import Chats from './Chats'
 
@@ -6,11 +6,14 @@ import Chats from './Chats'
 function Sidebar() {
   return (
     <>
-      <div className='flex flex-col bg-bg shadow-lg rounded-s-md'>
-        <Navbar />
+      <div className='flex flex-col bg-bg border-r border-lightbg rounded-s-md  h-full'>
+        <Navbar1 />
         <Search />
-        <Chats />
+        <div className='flex-1 overflow-y-scroll h-full  hide-scrollbar'>
+          <Chats />
+        </div>
       </div>
+
     </>
   )
 }

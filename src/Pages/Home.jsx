@@ -1,19 +1,19 @@
-import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Chat from "../components/Chat";
 
 function Home() {
-  
+
     return (
         <>
-            <div className='flex h-screen p-5 shadow-lg' >
-                <div className="flex-auto w-28">
-                <Sidebar />
+            <div className='flex overflow-auto h-screen p-5 ' >
+                <div className="flex-auto w-[40%] 3xl:w-[30%]">
+                    <Sidebar />
                 </div>
-                <div className="flex-auto w-96">
-                <Chat />
+                <div className="flex-auto w-[60%] bg-blue-500 rounded-r-xl 3xl:w-[70%]">
+                    <Chat />
                 </div>
             </div>
+
         </>
     )
 }

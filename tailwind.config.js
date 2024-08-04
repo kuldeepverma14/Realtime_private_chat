@@ -14,11 +14,23 @@ export default {
         "2xl": "1440px",
         "3xl": "1560px"
       },
-      colors:{
-        "bg":"#6482AD",
-        "lightbg":"#95a5a6"
+      colors: {
+        "bg": "#6482AD",
+        "lightbg": "#95a5a6"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.hide-scrollbar': {
+          '-ms-overflow-style': 'none', /* IE and Edge */
+          'scrollbar-width': 'none', /* Firefox */
+        },
+        '.hide-scrollbar::-webkit-scrollbar': {
+          display: 'none', /* Chrome, Safari, and Opera */
+        },
+      }, ['responsive', 'hover'])
+    }
+  ],
 }
