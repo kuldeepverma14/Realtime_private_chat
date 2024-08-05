@@ -6,7 +6,7 @@ function Chats() {
   return (
     <>
       <div className=''>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -15,7 +15,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -24,7 +24,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -33,7 +33,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -42,7 +42,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -51,7 +51,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -60,7 +60,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -69,7 +69,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -78,7 +78,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -87,7 +87,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -96,7 +96,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -105,7 +105,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -114,7 +114,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -123,7 +123,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -132,7 +132,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -141,7 +141,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -150,7 +150,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -159,7 +159,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -168,7 +168,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -177,7 +177,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -186,7 +186,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -195,7 +195,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>
@@ -204,7 +204,7 @@ function Chats() {
             <div className='text-white text-sm'>hey SDFG1sdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss </div>
           </div>
         </div>
-        <div className='flex items-center gap-3 border-t border-lightbg py-2 px-3'>
+        <div className='flex items-center gap-3 border-t hover:bg-[#2c3e50] border-lightbg py-2 px-3'>
           <div className=''>
             <ImageComponent mypic={mypic} h={4} w={4} />
           </div>

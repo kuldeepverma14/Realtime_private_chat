@@ -1,11 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import {  signInWithEmailAndPassword } from 'firebase/auth'
 import { Link, useNavigate, } from 'react-router-dom'
-import { app } from '../../Firebase'
 import { useState } from 'react'
+import { auth } from '.././library/Firebase'
 
-
-const auth = getAuth(app)
 
 function SignIn() {
     

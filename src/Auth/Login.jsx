@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { RxAvatar } from 'react-icons/rx'
 import { Link } from 'react-router-dom'
+import { auth } from '.././library/Firebase'
 
 function Login() {
 
