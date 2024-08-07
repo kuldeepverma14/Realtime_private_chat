@@ -12,7 +12,7 @@ function Login() {
         <>
             <main className='bg-blue-50  h-screen flex flex-col justify-center items-center' >
                 <div className=' block shadow-lg bg-white  p-10 rounded-lg'>
-                    <h1 className='text-center'>kd chat</h1>
+                    <h1 className='text-center'>KD Realtime Chat</h1>
                     <h1 className='text-center text-2xl font-bold'>Login</h1>
 
                     <form className='mt-5'>
