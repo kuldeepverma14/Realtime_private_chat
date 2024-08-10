@@ -14,9 +14,10 @@ function Router() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/" element={<ProtectedRoute><Home /> </ProtectedRoute>} />
+          {/* <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} /> */}
+          {/* <Route path="/" element={<ProtectedRoute><Home /> </ProtectedRoute>} /> */}
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

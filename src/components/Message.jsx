@@ -46,7 +46,7 @@ function Message() {
               </p>
             </div>
             <div className='relative w-full mt-3 flex justify-end'>
-              <img className='relative pt-3 px-2 pb-1 bg-white lg:w-[50%] xl:w-[40%] 3xl:w-[30%] h-[17rem] xl:h-[20rem] object-coverrounded-b-xl rounded-s-xl' src={mypic} alt="not found" />
+              <img className='relative pt-3 px-2 pb-1 bg-white lg:w-[50%] xl:w-[40%] 3xl:w-[30%] h-[17rem] xl:h-[20rem] object-cover rounded-b-xl rounded-s-xl' src={mypic} alt="not found" />
               <span
                 className="absolute top-0 right-[-15px] border-t-[5px] border-t-transparent border-b-[5px] border-b-transparent border-l-[15px] border-l-white"
               ></span>

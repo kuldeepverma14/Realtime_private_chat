@@ -16,7 +16,6 @@ function SignIn() {
                 console.log(value)
                 if (value?.user?.uid) {
                     localStorage.setItem("chatToken", value?.user?.accessToken)
-                    localStorage.setItem("chatUID", value?.user?.uid)
                     navigate("/")
                 }
             }).catch(err => {

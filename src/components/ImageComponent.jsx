@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 
 const ImageComponent = ({ mypic, h, w }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-console.log(h,w)
+// console.log(h,w)
     const openModal = () => setModalIsOpen(true);
     const closeModal = () => setModalIsOpen(false);
 

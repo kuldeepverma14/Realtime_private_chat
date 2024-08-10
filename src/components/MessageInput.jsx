@@ -1,38 +1,42 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BsFillSendFill } from 'react-icons/bs';
 import { FiPaperclip } from 'react-icons/fi';
 import { MdOutlinePermMedia } from 'react-icons/md';
 
 function MessageInput() {
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState(null);
 
-    const handleClick = () => {
-        setClicked(true);
-        // Remove the red background color after a short delay
-        setTimeout(() => setClicked(false), 300); // Adjust time as needed
-    };
+   
+    useEffect(() => {
+        const clearTime = setTimeout(() => setClicked(null), 300); // Adjust time as needed
+        return () => {
+            clearTimeout(clearTime)
+        }
+    })
 
     return (
         <div className='flex items-center w-full px-3 bg-lightbg'>
             <textarea
                 placeholder='Type a message'
                 className='py-5 pr-10 break-words hide-scrollbar text-white bg-lightbg flex-auto w-full border-none focus:outline-none placeholder-gray-500 resize-none'
-                rows={1} // You can adjust the number of visible rows
+                rows={1}
             />
             <div className='flex-shrink-0 flex gap-2'>
                 <button
-                    onClick={handleClick}
-                    className={`p-2 text-white rounded-full font-semibold ${clicked ? 'bg-red-500' : 'hover:bg-bg'}`}
+                    onClick={()=>setClicked("paper")}
+                    className={`p-2 text-white rounded-full font-semibold ${clicked==="paper" ? 'bg-[#2c3e50]' : 'hover:bg-bg'}`}
                 >
                     <FiPaperclip size={22} />
                 </button>
                 <button
-                    className='p-2 text-white rounded-full font-semibold hover:bg-bg'
+                    onClick={()=>setClicked("image")}
+                    className={`p-2 text-white rounded-full font-semibold ${clicked==="image" ? 'bg-[#2c3e50]' : 'hover:bg-bg'}`}
                 >
                     <MdOutlinePermMedia size={22} />
                 </button>
                 <button
-                    className='p-2 text-white rounded-full font-semibold hover:bg-bg'
+                    onClick={()=>setClicked("message")}
+                    className={`p-2 text-white rounded-full font-semibold ${clicked==="message" ? 'bg-[#2c3e50]' : 'hover:bg-bg'}`}
                 >
                     <BsFillSendFill size={22} />
                 </button>

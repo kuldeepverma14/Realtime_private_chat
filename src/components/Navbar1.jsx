@@ -8,7 +8,7 @@ function Navbar1() {
   const SignOutUser = () => {
     localStorage.removeItem('chatToken');
     localStorage.removeItem('chatUID');
-    navigate('/signin');
+    navigate('/login');
   }
 
   return (

@@ -1,17 +1,15 @@
-import { RxAvatar } from 'react-icons/rx'
-import { Link } from 'react-router-dom'
-import { auth, database, storage } from '.././library/Firebase'
-import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import { Link, useNavigate } from 'react-router-dom'
+import { auth, database } from '.././library/Firebase'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { useState } from 'react'
-import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage'
 import avatar1 from ".././assets/avatar.png"
 import { doc, setDoc } from 'firebase/firestore'
 import Upload from '../library/Upload'
 function Register() {
-
+const navigate=useNavigate()
     const [error, setError] = useState(false)
     const [avatar, setAvatar] = useState()
-
+    const [loading, setLoading] = useState(false)
     const handleAvatar = e => {
         if (e.target.files[0]) {
             setAvatar({
@@ -23,6 +21,7 @@ function Register() {
     }
 
     const registerHandler = async (e) => {
+        setLoading(true)
         e.preventDefault()
         const formData = new FormData(e.target)
         const { userName, email, password } = Object.fromEntries(formData)
@@ -32,41 +31,47 @@ function Register() {
         // const file = e.target[3].files[0]
         try {
             const response = await createUserWithEmailAndPassword(auth, email, password)
-            const imgUrl= await Upload(avatar.file)
-            await setDoc(doc(database, "user", response.user.uid),{
+            const imgUrl = await Upload(avatar.file)
+            await setDoc(doc(database, "users", response.user.uid), {
                 userName,
                 email,
-                avatar:imgUrl,
-                id:response.user.uid,
-                blocked:[]
+                avatar: imgUrl,
+                id: response.user.uid,
+                blocked: []
             })
-            await setDoc(doc(database, "userChats", response.user.uid),{
-                chats:[]
+            await setDoc(doc(database, "userChats", response.user.uid), {
+                chats: []
             })
-            if(response.user.uid)console.log("success",)
-          
-                // const storageRef = ref(storage, displayName) // data.name= name of image which it will be saved
-                // const uploadTask = uploadBytesResumable(storageRef, file)
-                // // register three observer
-                // uploadTask.on(
-                //     error => {
-                //         console.log(error)
-                //         setError(true)
-                //     },
-                //     getDownloadURL(uploadTask.snapshot.ref)
-                //         .then(async downloadURL => {
-                //             console.log("downloadURL", downloadURL)
-                //             await updateProfile(
-                //                 response.user, { displayName, photoURL: downloadURL }
-                //             )
-                //         })
-                // )
-                // .then(val => console.log(val))
-                // .catch(err => console.log(err))
+            if (response.user.uid){
+                navigate("/login")
+            } console.log("success",)
+
+            // const storageRef = ref(storage, displayName) // data.name= name of image which it will be saved
+            // const uploadTask = uploadBytesResumable(storageRef, file)
+            // // register three observer
+            // uploadTask.on(
+            //     error => {
+            //         console.log(error)
+            //         setError(true)
+            //     },
+            //     getDownloadURL(uploadTask.snapshot.ref)
+            //         .then(async downloadURL => {
+            //             console.log("downloadURL", downloadURL)
+            //             await updateProfile(
+            //                 response.user, { displayName, photoURL: downloadURL }
+            //             )
+            //         })
+            // )
+            // .then(val => console.log(val))
+            // .catch(err => console.log(err))
         } catch (err) {
             setError(true)
+        } finally {
+            setLoading(false)
         }
     }
+
+
     return (
         <> {error && <div className='text-red-500 flex justify-center' >Something went wrong</div>}
             <main className='bg-blue-50  h-screen flex flex-col justify-center items-center' >
@@ -109,10 +114,10 @@ function Register() {
                         <div>
                         </div>
 
-                        <button className='mt-5 bg-bg text-white w-96 h-10 rounded'  >Register</button>
+                        <button disabled={loading} className='mt-5 bg-bg text-white w-96 h-10 rounded'  >{loading ? "Loading" : "Register"}</button>
                     </form>
                     <div className='text-center mt-5'>
-                        Already have an account? <Link to="/login" className='underline text-[#6482AD] hover=text-[#8C3061]' >Login </Link>
+                        Already have an account? <Link to="/login" className='hover:text-[#3498db] underline text-[#6482AD] hover=text-[#8C3061]' >Login </Link>
                     </div>
                 </div>
             </main>
